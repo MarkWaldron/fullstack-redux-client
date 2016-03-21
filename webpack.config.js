@@ -1,8 +1,10 @@
+var webpack = require('webpack');
+
 module.exports = {
   entry: [
-    'webpact-dev-server/client?http://localhost:8080',
-    'webpact/hot/only-dev-server',
-    './src/index.js'
+    'webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/only-dev-server',
+    './src/index.jsx'
   ],
   modle: {
     loaders: [{
