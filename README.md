@@ -1,2 +1,2 @@
 # fullstack-redux-client
-#### Voting app client built in React/Redux
+#### Voting app client built with React/Redux
