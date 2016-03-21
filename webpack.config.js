@@ -1,12 +1,14 @@
 module.exports = {
   entry: [
+    'webpact-dev-server/client?http://localhost:8080',
+    'webpact/hot/only-dev-server',
     './src/index.js'
   ],
   modle: {
     loaders: [{
       test: /\.ksx?$/,
       exclude: /node_modules/,
-      loader: 'babel'
+      loader: 'react-hot!babel'
     }]
   },
   resolve: {
@@ -18,6 +20,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './dist'
-  }
+    contentBase: './dist',
+    hot: true
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
