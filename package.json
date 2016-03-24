@@ -30,10 +30,12 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "autoprefixer": "^6.3.4",
     "immutable": "^3.7.6",
     "react": "^0.14.7",
     "react-addons-pure-render-mixin": "^0.14.7",
     "react-addons-test-utils": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0"
   }
 }
